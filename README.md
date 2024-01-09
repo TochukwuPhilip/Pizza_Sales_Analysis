@@ -40,7 +40,7 @@ The dataset for this task is a small data and was sourced from Swapnjeet S (Data
 ![image](https://github.com/TochukwuPhilip/Pizza_Sales_Analysis/assets/108484860/ff307472-6217-423c-87e3-f8584e2de4e9)
 The dataset consists of 12 columns and 48,620 rows.
 The columns include:
-pizza_id, order_id,	pizza_name_id,	quantity,	order_date,	order_time,	unit_price,	total_price,	pizza_size,	pizza_category,	pizza_ingredients and	pizza_name
+pizza_id, order_id,	pizza_name_id,	quantity,	order_date,	order_time,	unit_price,	total_price,	pizza_size,	pizza_category,	pizza_ingredients and	pizza_name.
 
 
 
