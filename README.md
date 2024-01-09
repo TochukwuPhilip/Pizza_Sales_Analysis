@@ -1,13 +1,15 @@
-![image](https://github.com/TochukwuPhilip/Pizza_Sales_Analysis/assets/108484860/9f65a51d-925c-46f0-88e4-55eb79cba397)
+![image](https://github.com/TochukwuPhilip/Pizza_Sales_Analysis/assets/108484860/94b5b882-3bd0-4861-8aa2-7c56bbf52bdb)![image](https://github.com/TochukwuPhilip/Pizza_Sales_Analysis/assets/108484860/9f65a51d-925c-46f0-88e4-55eb79cba397)
 
 # Introduction
 In order to practice my SQL and Power BI skills and to apply them to a real-life scenario, I looked for a simple dataset that I can use for this purpose.
-This is a a follow-along project which involves the analysis of pizza sales by a local pizza outlet.
-The dataset for this task was sourced from Swapnjeet S (Data Tutorials)
+This task involves the analysis of pizza sales for a local pizza outlet.
+The dataset for this task was sourced from the follow-along video of Swapnjeet S (Data Tutorials).
+
+# Data Analysis Process:
+![image](https://github.com/TochukwuPhilip/Pizza_Sales_Analysis/assets/108484860/d81ddfdd-a205-4f8f-bfe7-4d95b8187f33)
 
 
-
-# Problem Statement:
+# Business Problem:
 The client has requested to know at a glance their pizza sales performances and trends using the following metrics and key performance indices (KPIs).
 The client's requests are as follows:
 ### KPI’s REQUIREMENT
@@ -31,4 +33,16 @@ Generate a pie chart that represents the percentage of sales attributed to diffe
 Create a funnel chart that presents the total number of pizzas sold for each pizza category. This chart will allow us to compare the sales performance of different pizza categories.
   6.	Top 5 Best Sellers by Revenue, Total Quantity and Total Orders: Create a bar chart highlighting the top 5 best-selling pizzas based on the Revenue, Total Quantity, Total Orders. This chart will help us identify the most popular pizza options.
   7.	 Bottom 5 Worst Sellers by Revenue, Total Quantity and Total Orders: Create a bar chart showcasing the bottom 5 worst-selling pizzas based on the Revenue, Total Quantity, Total Orders. This chart will enable us to identify underperforming or less popular pizza options.
+
+# Get Data:
+The dataset for this task is a small data and was sourced from Swapnjeet S (Data Tutorials)'s [folder](https://docs.google.com/spreadsheets/d/1mF1G56ZrwQlksmS5meWgC1yXRgeqGV2T/edit?usp=drive_link)
+
+![image](https://github.com/TochukwuPhilip/Pizza_Sales_Analysis/assets/108484860/ff307472-6217-423c-87e3-f8584e2de4e9)
+The dataset consists of 12 columns and 48,620 rows.
+The columns include:
+pizza_id, order_id,	pizza_name_id,	quantity,	order_date,	order_time,	unit_price,	total_price,	pizza_size,	pizza_category,	pizza_ingredients and	pizza_name
+
+
+
+
 
