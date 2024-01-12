@@ -6,7 +6,8 @@ This task involves the analysis of pizza sales for a local pizza outlet.
 The dataset for this task was sourced from the follow-along video of Swapnjeet S (Data Tutorials).
 
 # Data Analysis Process:
-![image](https://github.com/TochukwuPhilip/Pizza_Sales_Analysis/assets/108484860/d81ddfdd-a205-4f8f-bfe7-4d95b8187f33)
+![image](https://github.com/TochukwuPhilip/Pizza_Sales_Analysis/assets/108484860/50dc98b3-c68b-4bbf-949f-b4b27f054629)
+
 
 
 # Business Problem:
@@ -41,6 +42,180 @@ The dataset for this task is a small data and was sourced from Swapnjeet S (Data
 The dataset consists of 12 columns and 48,620 rows.
 The columns include:
 pizza_id, order_id,	pizza_name_id,	quantity,	order_date,	order_time,	unit_price,	total_price,	pizza_size,	pizza_category,	pizza_ingredients and	pizza_name.
+
+# Explore and Clean the Data:
+Data Exploration consists of Variable Identification, Missing values treatment, Outlier treatment, Variable transformation, Variable creation e.t.c
+The variables in this dataset have been identified (pizza_id, order_id,	pizza_name_id,	quantity,	order_date,	order_time,	unit_price,	total_price,	pizza_size,	pizza_category,	pizza_ingredients and	pizza_name).
+There are no missing values as the dataset is relatively small.
+![image](https://github.com/TochukwuPhilip/Pizza_Sales_Analysis/assets/108484860/15dbfbb0-03ef-4325-95ea-23e0b81b8df1)
+Using the View menu on Power Query helps to see the column quality, column distribution and column profile. Through this, it is observed that our dataset is clean and ready for analysis. Although some new columns and measures will be created in order to answer some questions from the client.
+
+# Data Analysis:
+I have utilized Microsoft SQL to first query the data and answer the questions from the client and further employed the use of Power BI for visualization.
+The results from both analysis will be used for comparison.
+PIZZA SALES SQL QUERIES
+
+KPI’s
+-- 1. TOTAL REVENUE
+SELECT ROUND(SUM(total_price),2) AS Total_Revenue
+FROM pizza_sales;
+ 
+--2. AVERAGE ORDER VALUE
+SELECT SUM(total_price)/COUNT(DISTINCT order_id) AS Average_order_value
+FROM pizza_sales;
+ 
+--3. TOTAL PIZZA SOLD
+SELECT SUM(quantity) AS Total_Pizza_Sold
+FROM pizza_sales;
+ 
+--4. TOTAL ORDERS
+SELECT COUNT(DISTINCT order_id) AS Total_Orders
+FROM pizza_sales;
+ 
+--5. AVERAGE PIZZA PER ORDER
+SELECT CAST(CAST(SUM(quantity)AS DECIMAL(10,2)) /CAST(COUNT(DISTINCT order_id) AS DECIMAL(10,2)) AS DECIMAL(10,2)) AS Average_Pizzas_Per_Order
+FROM pizza_sales;
+ 
+
+
+
+
+
+CHARTS REQUIREMENT
+--1 DAILY TREND OF TOTAL ORDERSORDER
+SELECT 
+	DATENAME(DW, Order_date) as Order_Day,
+	COUNT(DISTINCT Order_id) AS Total_Orders
+FROM pizza_sales
+GROUP BY DATENAME(DW, Order_date);
+
+ 
+--2 MONTHLY TREND OF TOTAL ORDERS
+SELECT 
+	DATENAME(MONTH, Order_date) as Month_Name,
+	COUNT(DISTINCT Order_id) AS Total_Orders
+FROM pizza_sales
+GROUP BY DATENAME(MONTH, Order_date)
+ORDER BY Total_Orders DESC;
+ 
+
+
+
+
+
+
+--3. PERCENTAGE OF SALES BY PIZZA CATEGORY
+SELECT 
+	pizza_category, SUM(total_price) AS Total_Sales,
+	SUM(total_price)*100/(SELECT SUM(total_price) FROM pizza_sales) AS Percentage_of_Sales
+FROM pizza_sales
+GROUP BY pizza_category;
+ 
+
+--4. PERCENTAGE OF SALES BY PIZZA SIZE
+SELECT 
+	pizza_size, CAST(SUM(total_price) AS DECIMAL(10,2)) AS Total_Sales,
+	CAST(SUM(total_price)*100/(SELECT SUM(total_price) FROM pizza_sales) AS DECIMAL(10,2)) AS Percentage_of_Sales
+FROM pizza_sales
+GROUP BY pizza_size
+ORDER BY Percentage_of_Sales DESC;
+ 
+
+--5. TOP 5 BEST SELLERS BY REVENUE, TOTAL QUANTITY AND TOTAL ORDERS
+
+TOP 5 BEST SELLERS BY REVENUE
+SELECT TOP 5 pizza_name, SUM(total_price ) AS Total_Revenue
+FROM pizza_sales
+GROUP BY pizza_name
+ORDER BY Total_Revenue DESC;
+ 
+
+
+
+
+
+
+TOP 5 BEST SELLERS BY TOTAL QUANTITY
+SELECT TOP 5 pizza_name, SUM(quantity) AS Total_Quantity 
+FROM pizza_sales
+GROUP BY pizza_name
+ORDER BY Total_Quantity DESC;
+ 
+TOP 5 BEST SELLERS BY TOTAL ORDERS
+SELECT TOP 5 pizza_name, COUNT(DISTINCT order_id ) AS Total_Orders
+FROM pizza_sales
+GROUP BY pizza_name
+ORDER BY Total_Orders DESC;
+ 
+
+--5. TOP 5 WORST SELLERS BY REVENUE, TOTAL QUANTITY AND TOTAL ORDERS
+
+TOP 5 WORST SELLERS BY TOTAL QUANTITY
+SELECT TOP 5 pizza_name, SUM(quantity) AS Total_Quantity 
+FROM pizza_sales
+GROUP BY pizza_name
+ORDER BY Total_Quantity ASC;
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+TOP 5 WORST SELLERS BY REVENUE
+SELECT TOP 5 pizza_name, SUM(total_price ) AS Total_Revenue
+FROM pizza_sales
+GROUP BY pizza_name
+ORDER BY Total_Revenue ASC;
+ 
+
+TOP 5 WORST SELLERS BY TOTAL ORDERS
+SELECT TOP 5 pizza_name, COUNT(DISTINCT order_id ) AS Total_Orders
+FROM pizza_sales
+GROUP BY pizza_name
+ORDER BY Total_Orders ASC;
+
+ 
+
+
+
+
+--NOTE
+/*If we want to apply the Month, Quarter, Week filters to the above queries we
+can use*/ 
+WHERE clause. Follow some of below examples
+SELECT DATENAME(DW, order date) AS order day, COUNT(DISTINCT order_id) AS
+total orders
+FROM pizza sales
+WHERE MONTH(order date) = 1
+GROUP BY DATENAME(DW, order date);
+/*Here MONTH(order date) = 1 indicates that the output is for the month of
+January. MONTH(order date) = 4 indicates output for Month of April.*/
+
+SELECT DATENAME(DW, order date) AS order day, COUNT(DISTINCT order id) AS
+total orders
+FROM pizza sales
+WHERE DATEPART(QUARTER, order date) = 1
+GROUP BY DATENAME(DW, order date)
+/*Here DATEPART(QUARTER, order date) = 1 indicates that the output is for
+the Quarter 1. MONTH(order date) = 3 indicates output for Quarter 3.
+SELECT pizza_category, sum(total_price) as Total_Sales, sum(total_price) * 100 /
+(SELECT sum(total_price) from pizza_sales WHERE MONTH(order_date) = 1) AS PCT
+from pizza_sales
+WHERE MONTH(order_date) = 1
+GROUP BY pizza_category;
+/*Here WHERE MONTH(order_date) = 1 filters the output for the Month of January. Also, if it is applied to the main query, it should also be used in the subquery to get an accurate result.
+
+
+
+
+
 
 
 
