@@ -53,7 +53,7 @@ Using the View menu on Power Query helps to see the column quality, column distr
 # Data Analysis:
 I have utilized Microsoft SQL to first query the data and answer the questions from the client and further employed the use of Power BI for visualization.
 The results from both analysis will be used for comparison.
-PIZZA SALES SQL QUERIES
+### PIZZA SALES SQL QUERIES
 
 KPI’s
 -- 1. TOTAL REVENUE
@@ -78,9 +78,6 @@ FROM pizza_sales;
  
 
 
-
-
-
 CHARTS REQUIREMENT
 --1 DAILY TREND OF TOTAL ORDERSORDER
 SELECT 
@@ -98,10 +95,6 @@ FROM pizza_sales
 GROUP BY DATENAME(MONTH, Order_date)
 ORDER BY Total_Orders DESC;
  
-
-
-
-
 
 
 --3. PERCENTAGE OF SALES BY PIZZA CATEGORY
@@ -130,11 +123,6 @@ GROUP BY pizza_name
 ORDER BY Total_Revenue DESC;
  
 
-
-
-
-
-
 TOP 5 BEST SELLERS BY TOTAL QUANTITY
 SELECT TOP 5 pizza_name, SUM(quantity) AS Total_Quantity 
 FROM pizza_sales
@@ -155,16 +143,6 @@ SELECT TOP 5 pizza_name, SUM(quantity) AS Total_Quantity
 FROM pizza_sales
 GROUP BY pizza_name
 ORDER BY Total_Quantity ASC;
- 
-
-
-
-
-
-
-
-
-
 
 
 
@@ -182,9 +160,6 @@ GROUP BY pizza_name
 ORDER BY Total_Orders ASC;
 
  
-
-
-
 
 --NOTE
 /*If we want to apply the Month, Quarter, Week filters to the above queries we
@@ -212,6 +187,14 @@ WHERE MONTH(order_date) = 1
 GROUP BY pizza_category;
 /*Here WHERE MONTH(order_date) = 1 filters the output for the Month of January. Also, if it is applied to the main query, it should also be used in the subquery to get an accurate result.
 
+## Data Visualization
+The Key performance indicators (KPIs) have been represented on a cards on power BI to aid the clients to quickly grasp the figures because of their significance.
+
+![image](https://github.com/TochukwuPhilip/Pizza_Sales_Analysis/assets/108484860/e65f844f-d185-4266-8e33-9bf1aa5bc82f)
+To achieve this, measures have been created from the model view within the Data pane.
+For example, to create the Total Revenue measure, under the Table Tools, I selected New Measure and typed the following formula:
+Total Revenue = SUM(pizza_sales[total_price])
+I reapeated this step for the remaining four measures.
 
 
 
