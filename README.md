@@ -190,11 +190,13 @@ GROUP BY pizza_category;
 ## Data Visualization
 The Key performance indicators (KPIs) have been represented on a cards on power BI to aid the clients to quickly grasp the figures because of their significance.
 
-![image](https://github.com/TochukwuPhilip/Pizza_Sales_Analysis/assets/108484860/e65f844f-d185-4266-8e33-9bf1aa5bc82f)
 To achieve this, measures have been created from the model view within the Data pane.
+![image](https://github.com/TochukwuPhilip/Pizza_Sales_Analysis/assets/108484860/b8398a88-3136-428c-880f-32207a6874e1)
+
 For example, to create the Total Revenue measure, under the Table Tools, I selected New Measure and typed the following formula:
 Total Revenue = SUM(pizza_sales[total_price])
 I reapeated this step for the remaining four measures.
+![image](https://github.com/TochukwuPhilip/Pizza_Sales_Analysis/assets/108484860/e65f844f-d185-4266-8e33-9bf1aa5bc82f)
 
 
 
