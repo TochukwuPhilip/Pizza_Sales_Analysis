@@ -187,7 +187,8 @@ WHERE MONTH(order_date) = 1
 GROUP BY pizza_category;
 /*Here WHERE MONTH(order_date) = 1 filters the output for the Month of January. Also, if it is applied to the main query, it should also be used in the subquery to get an accurate result.
 
-## Data Visualization
+# Data Visualization
+## The Key performance indicators (KPIs) Requirement:
 The Key performance indicators (KPIs) have been represented on a cards on power BI to aid the clients to quickly grasp the figures because of their significance.
 
 To achieve this, measures have been created from the model view within the Data pane.
@@ -200,11 +201,19 @@ I reapeated this step for the remaining four measures.
 
 ![image](https://github.com/TochukwuPhilip/Pizza_Sales_Analysis/assets/108484860/4b20697c-2328-4dc5-b28c-e9f292ffbabf)
 As at 31st December 2015, the client's KPI's stood at:
-- Total Revenue:	$817,680
-- Average Order Value:	49,574
-- Total Pizzas Sold:	38.31
-- Total Orders:		21,350
-- Average Pizzas Per Orders:
+- Total Revenue:		$817,680
+- Average Order Value:		49,574
+- Total Pizzas Sold:		38.31
+- Total Orders:			21,350
+- Average Pizzas Per Orders:	2.23
+
+## Chart Requirements:
+### Daily Trend of Total Orders:
+This chart will help the client identify any patterns or fluctuations in order volumes on a daily basis.
+![image](https://github.com/TochukwuPhilip/Pizza_Sales_Analysis/assets/108484860/2ceb647d-17d1-444d-a7b2-60aad9b4812c)
+
+
+
 
 
 
