@@ -5,7 +5,7 @@
 # Introduction
 In order to practice my SQL and Power BI skills and to apply them to a real-life scenario, I looked for a simple dataset that I can use for this purpose.
 This task involves the analysis of pizza sales for a local pizza outlet.
-The dataset for this task was sourced from the follow-along video of Swapnjeet S (Data Tutorials).
+The dataset for this task was sourced from Swapnjeet S (Data Tutorials).
 
 # Data Analysis Process:
 ![image](https://github.com/TochukwuPhilip/Pizza_Sales_Analysis/assets/108484860/50dc98b3-c68b-4bbf-949f-b4b27f054629)
