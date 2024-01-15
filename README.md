@@ -27,7 +27,7 @@ We would like to visualize various aspects of our pizza sales data to gain insig
   1.	Daily Trend of Total Orders:
 Create a bar chart that displays the daily trend of total orders over a specific time period. This chart will help us identify any patterns or fluctuations in order volumes on a daily basis.
   2.	Monthly Trend of Total Orders:
-Create a line chart that illustrates the hourly trend of total orders throughout the day. This chart will allow us to identify peak hours or periods of high order activity.
+Create a line chart that illustrates the monthly trend of total orders throughout the year. This chart will allow us to identify peak month or months of high order activity.
   3.	Percentage of Sales by Pizza Category:
 Create a pie chart that shows the distribution of sales across different pizza categories. This chart will provide insights into the popularity of various pizza categories and their contribution to overall sales.
   4.	Percentage of Sales by Pizza Size:
@@ -212,10 +212,17 @@ As at 31st December 2015, the client's KPI's stood at:
 ## Chart Requirements:
 ### Daily Trend of Total Orders:
 This chart will help the client identify any patterns or fluctuations in order volumes on a daily basis.
-![image](https://github.com/TochukwuPhilip/Pizza_Sales_Analysis/assets/108484860/2ceb647d-17d1-444d-a7b2-60aad9b4812c)
-The bar chart has been used to present the daily trends of pizza Total Orders
+
+![image](https://github.com/TochukwuPhilip/Pizza_Sales_Analysis/assets/108484860/22bc8a13-c1e6-43d7-ae89-53d60a3ece09)
+
+The line chart has been used to present the daily trends of pizza Total Orders
 From the chart one can see that orders are highest on Fridays at 3,540 orders followed closely by Thursdays and Saturdays.
 In order to simplify the day name, a calculated column was created using the formula: Order Day = UPPER(LEFT(pizza_sales[Day Name], 3))
+
+### Monthly Trend of Total Orders:
+This chart will allow the client to identify peak month or months of high order activity.
+![image](https://github.com/TochukwuPhilip/Pizza_Sales_Analysis/assets/108484860/50d5c6c0-47b9-493b-8d24-f736097e1c49)
+
 
 
 
