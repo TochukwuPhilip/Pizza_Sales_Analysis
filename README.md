@@ -1,4 +1,4 @@
-![image](https://github.com/TochukwuPhilip/Pizza_Sales_Analysis/assets/108484860/94b5b882-3bd0-4861-8aa2-7c56bbf52bdb)![image](https://github.com/TochukwuPhilip/Pizza_Sales_Analysis/assets/108484860/9f65a51d-925c-46f0-88e4-55eb79cba397)
+![image](https://github.com/TochukwuPhilip/Pizza_Sales_Analysis/assets/108484860/c5f4e6fd-2cb6-40ce-ba2e-932f3e9385ad)
 
 # Introduction
 In order to practice my SQL and Power BI skills and to apply them to a real-life scenario, I looked for a simple dataset that I can use for this purpose.
@@ -211,6 +211,10 @@ As at 31st December 2015, the client's KPI's stood at:
 ### Daily Trend of Total Orders:
 This chart will help the client identify any patterns or fluctuations in order volumes on a daily basis.
 ![image](https://github.com/TochukwuPhilip/Pizza_Sales_Analysis/assets/108484860/2ceb647d-17d1-444d-a7b2-60aad9b4812c)
+The bar chart has been used to present the daily trends of pizza Total Orders
+From the chart one can see that orders are highest on Fridays at 3,540 orders followed closely by Thursdays and Saturdays.
+In order to simplify the day name, a calculated column was created using the formula: Order Day = UPPER(LEFT(pizza_sales[Day Name], 3))
+
 
 
 
