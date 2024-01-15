@@ -224,6 +224,49 @@ In order to simplify the day name, a calculated column was created using the for
 This chart will allow the client to identify peak month or months of high order activity.
 
 ![image](https://github.com/TochukwuPhilip/Pizza_Sales_Analysis/assets/108484860/50d5c6c0-47b9-493b-8d24-f736097e1c49)
+The highest total orders occur inthe months of July and January.
+
+### Percentage of Sales by Pizza Category & Pizza Size:
+The donut charts are used to show percentages/proportions of the sales by pizza categories and pizza sizes.
+The first donut chart will provide insights into the popularity of various pizza categories and their contribution to overall sales.
+The second donut chart will help us understand customer preferences for pizza sizes and their impact on sales.
+The funnel chart emphasizes the sales by pizza categoriy
+![image](https://github.com/TochukwuPhilip/Pizza_Sales_Analysis/assets/108484860/c8622506-a324-44b8-8d4b-a55a0d8145bd)
+- CATEGORY: Classic Category Contributes to Maximum Sales and Total Orders
+- SIZE: Large size Pizza Contributes to Maximum Sales
+
+### Top 5 Best Sellers by Revenue, Total Quantity and Total Orders:
+![image](https://github.com/TochukwuPhilip/Pizza_Sales_Analysis/assets/108484860/cd7c30a3-08cf-4db2-94c8-422631385142)
+
+- REVENUE: The Thai Chicken Pizza Contributes to maximum Revenue
+- QUANTITY: The Classic Deluxe Pizza Contributes to maximum Total Quantities
+- TOTAL ORDERS: The Classic Deluxe Pizza Contributes to maximum Total Orders
+
+###  Bottom 5 Worst Sellers by Revenue, Total Quantity and Total Orders:
+![image](https://github.com/TochukwuPhilip/Pizza_Sales_Analysis/assets/108484860/4984ba90-1906-4c7e-8b0a-78eca66cb825)
+
+- REVENUE: The Brie Carre Pizza contributes to minimum Revenue
+- QUANTITY: The Brie Carre Pizza contributes to minimum Total Quantities
+- TOTAL ORDERS: The Brie Carrs Pizza contributes to minimum Total Orders
+
+# Summary:
+Key Trends:
+- Orders peak on Fridays, Thursdays, and Saturdays.
+- July and January are the busiest months for sales.
+- Classic pizzas are the most popular category, generating the highest sales and orders.
+- Large pizzas are the most preferred size.
+- The Classic Deluxe pizza is the top-selling individual pizza by quantity and orders, while the Thai Chicken pizza generates the most revenue.
+- The Brie Carre pizza is the least popular pizza across all metrics.
+  
+# Recommendations:
+Client may carry out the following in order to maximize revenue:
+- Focus marketing efforts on Fridays, Thursdays, and Saturdays to maximize order volume.
+- Develop special promotions and campaigns during July and January to capitalize on peak sales periods.
+- Continue promoting classic pizzas and large sizes, as they are clear customer favorites.
+- Consider strategies to boost sales of less popular pizzas, such as the Brie Carre, potentially through menu adjustments or targeted discounts.
+- Explore offering more customizable options for pizzas, as this could increase appeal to a wider range of customer preferences.
+- Analyze sales trends by time of day to identify potential opportunities for targeted promotions or menu adjustments (e.g., lunch specials).
+- Gather customer feedback to better understand preferences and inform future menu and marketing decisions.
 
 
 
