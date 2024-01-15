@@ -1,3 +1,5 @@
+# Pizza Sales Analysis
+
 ![image](https://github.com/TochukwuPhilip/Pizza_Sales_Analysis/assets/108484860/c5f4e6fd-2cb6-40ce-ba2e-932f3e9385ad)
 
 # Introduction
