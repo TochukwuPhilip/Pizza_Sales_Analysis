@@ -210,6 +210,7 @@ As at 31st December 2015, the client's KPI's stood at:
 - Average Pizzas Per Orders:	2.23
 
 ## Chart Requirements:
+
 ### Daily Trend of Total Orders:
 This chart will help the client identify any patterns or fluctuations in order volumes on a daily basis.
 
@@ -221,7 +222,9 @@ In order to simplify the day name, a calculated column was created using the for
 
 ### Monthly Trend of Total Orders:
 This chart will allow the client to identify peak month or months of high order activity.
+
 ![image](https://github.com/TochukwuPhilip/Pizza_Sales_Analysis/assets/108484860/50d5c6c0-47b9-493b-8d24-f736097e1c49)
+
 
 
 
