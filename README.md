@@ -3,8 +3,11 @@
 ![image](https://github.com/TochukwuPhilip/Pizza_Sales_Analysis/assets/108484860/c5f4e6fd-2cb6-40ce-ba2e-932f3e9385ad)
 
 # Introduction
-In order to practice my SQL and Power BI skills and to apply them to a real-life scenario, I looked for a simple dataset that I can use for this purpose.
 This task involves the analysis of pizza sales for a local pizza outlet.
+
+Peetzah is a ficticious local pizza company. The management of Peetzah wants to have a dashboard that shows their daily and monthly key performance indicators and trends in order to improve their pizza sales.
+In order to practice my SQL and Power BI skills and to apply them to a real-life scenario, I looked for a simple dataset that I can use for this purpose.
+
 The dataset for this task was sourced from Swapnjeet S (Data Tutorials).
 
 # Data Analysis Process:
@@ -248,6 +251,13 @@ The funnel chart emphasizes the sales by pizza categoriy
 - REVENUE: The Brie Carre Pizza contributes to minimum Revenue
 - QUANTITY: The Brie Carre Pizza contributes to minimum Total Quantities
 - TOTAL ORDERS: The Brie Carrs Pizza contributes to minimum Total Orders
+
+![image](https://github.com/TochukwuPhilip/Pizza_Sales_Analysis/assets/108484860/af247367-f3ca-43e6-b33a-ebaefbe0b488)
+
+![image](https://github.com/TochukwuPhilip/Pizza_Sales_Analysis/assets/108484860/c62a1674-4a28-4e7a-8b6f-86ea1f09bc66)
+
+
+
 
 # Summary:
 Key Trends:
