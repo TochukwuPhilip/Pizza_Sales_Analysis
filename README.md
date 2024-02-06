@@ -5,9 +5,7 @@
 # Introduction
 This task involves the analysis of pizza sales for a local pizza outlet.
 
-Peetzah is a ficticious local pizza company. The management of Peetzah wants to have a dashboard that shows their daily and monthly key performance indicators and trends in order to improve their pizza sales.
-In order to practice my SQL and Power BI skills and to apply them to a real-life scenario, I looked for a simple dataset that I can use for this purpose.
-
+Peetzah is a local pizza company. The management of Peetzah wants to have a dashboard that shows their daily and monthly key performance indicators and trends in order to improve their pizza sales.
 The dataset for this task was sourced from Swapnjeet S (Data Tutorials).
 
 # Data Analysis Process:
